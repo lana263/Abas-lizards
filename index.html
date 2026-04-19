@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abas' Lizard | Svijet Guštera</title>
+  <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+
+<div class="stars-bright"></div>
+<div class="background-glow"></div>
+
+<header>
+  <a href="Homepage.html" class="logo-link">
+    <img src="logo.png" alt="Abas' Lizard Logo" class="nav-logo">
+  </a>
+  <nav>
+    <ul class="menu">
+      <li><a href="Homepage.html">Homepage</a></li>
+      <li class="dropdown">
+        <a href="#">Vrste</a>
+        <ul class="dropdown-content">
+          <li><a href="Bradataagama.html">Bradata agama</a></li>
+          <li><a href="Argetinskitegu.html">Argetinski tegu</a></li>
+          <li><a href="Kameleon.html">Kameleon</a></li>
+          <li><a href="Krestastigekon.html">Krestasti gekon</a></li>
+          <li><a href="Leopardgekon.html">Leopard gekon</a></li>
+          <li><a href="Uromastiks.html">Uromastiks</a></li>
+          <li><a href="Zelenaiguana.html">Zelena iguana</a></li>
+        </ul>
+      </li>
+      <li><a href="Prehrana.html">Prehrana</a></li>
+      <li><a href="Oprema.html">Oprema</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content-wrapper">
+  
+  <section class="split-section">
+    <div class="text-side">
+      <h1>Ljuske umjesto krzna</h1>
+      <p>Tražite ljubimca koji ne laje i ne grebe kauč? Možda je vrijeme da upoznate ekipu koja svijet gleda kroz vodoravne zjenice. <span class="highlight">Gušteri su najslađi neobičan hobi na svijetu!</span></p>
+      
+      <div class="quiz-container-wrapper" style="margin-top: 40px;">
+        <span class="quiz-label">INTERAKTIVNI TEST</span>
+        <h3 class="quiz-pitch">Ne znaš odakle početi?</h3>
+        <button onclick="otvoriKviz()" class="cta-button quiz-btn">
+          POKRENI KVIZ: KOJI JE GUŠTER ZA TEBE? <span class="arrow">→</span>
+        </button>
+      </div>
+
+    </div>
+    <div class="image-side">
+      <div class="elegant-frame">
+        <img src="Guster.ljubimac.homepage.jfif" alt="Gušter 1">
+      </div>
+    </div>
+  </section>
+
+  <section class="split-section reverse">
+    <div class="text-side">
+      <h2>Kutak prirode u sobi</h2>
+      <p>Biti vlasnik gmaza je stvaranje <span class="highlight">malog komadića tropskog raja</span> u vlastitoj sobi. To je onaj poseban mir dok promatrate njihove polagane pokrete.</p>
+      <p>Svaki gušter priča svoju priču, a mi smo tu da vam pomognemo odabrati idealnog cimera koji će vas prepoznati čim uđete u sobu.</p>
+    </div>
+    <div class="image-side">
+      <div class="elegant-frame">
+        <img src="Guster.ljubimac2.homepage.jfif" alt="Gušter 2">
+      </div>
+    </div>
+  </section>
+
+  <section class="split-section">
+    <div class="text-side">
+      <h2>Briga bez straha</h2>
+      <p>Tehnički detalji oko <span class="highlight">temperature i UV rasvjete</span> znaju preplašiti početnike, ali uz prave informacije, proces postaje jednostavan.</p>
+      <p>Ovdje se nalazi sve što je potrebno za siguran ulazak u svijet teraristike. Put od početnika do uspješnog vlasnika ne mora biti stresan.</p>
+    </div>
+    <div class="image-side">
+      <div class="elegant-frame">
+        <img src="guster.ljubimac3.homeoage.jpg" alt="Gušter 3">
+      </div>
+    </div>
+  </section>
+
+  <div id="quizModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="zatvoriKviz()">&times;</span>
+      <div id="quiz-container">
+        <h2 id="pitanje-naslov">Pitanje 1</h2>
+        <p id="pitanje-tekst">Učitavanje...</p>
+        <div id="odgovori-container"></div>
+        <div class="progres-bar">
+          <div id="progres"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="Homepage.js"></script>
+<script src="kviz.js"></script>
+</body>
+</html>
